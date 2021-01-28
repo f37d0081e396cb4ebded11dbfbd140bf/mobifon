@@ -1,5 +1,5 @@
 select
-	cms.community_id,
+    cms.community_id,
     coms.name as community_name,
     ps.name as permission_name,
     (select count(id) from community_member_permissions where member_id = users.id) as users_having_this_permission
